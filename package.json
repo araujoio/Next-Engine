@@ -22,5 +22,10 @@
     "eslint-config-next": "16.2.2",
     "tailwindcss": "^4",
     "typescript": "^5"
+  },
+  "bin": {
+    "help": "scripts/cli/help.mts",
+    "create-page": "scripts/cli/create-page.mts",
+    "delete-page": "scripts/cli/delete-page.mts"
   }
 }
