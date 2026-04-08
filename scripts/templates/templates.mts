@@ -2,7 +2,28 @@
 /**
  * Default page template
 */
-export const pageTemplate = (name: string) => `\
+export const pageTemplate = (name: string) => `
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "${name}",
+  description: "Specific description of this page in up to 160 characters.",
+  alternates: {
+    canonical: "/${name}",
+  },
+  openGraph: {
+    title: "Catchy title for sharing this page",
+    description: "Link preview text for this specific page.",
+    images: [{ url: "/imgs/og-about.jpg", width: 1200, height: 630, alt: "..." }],
+    url: "/${name}"
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Catchy title for sharing this page",
+    description: "Link preview text for this specific page.",
+    images: [{ url: "/imgs/og-about.jpg", width: 1200, height: 630, alt: "..." }],
+  },
+};
 
 export default function ${name}Page() {
   return (
