@@ -1,8 +1,8 @@
-import { RouteRequiredError } from "../errors/route-required-error.mts";
-import { InvalidCharactersError } from "../errors/invalid-character-error.mts";
-import { InvalidFormatError } from "../errors/invalid-format-error.mts";
-import { ConsecutiveSlashesError } from "../errors/consecutive-slashes-error.mts";
-import { InvalidBoundaryError } from "../errors/invalid-boundary-error.mts";
+import { RouteRequiredError } from "../errors/route-required-error.ts";
+import { InvalidCharactersError } from "../errors/invalid-character-error.ts";
+import { InvalidFormatError } from "../errors/invalid-format-error.ts";
+import { ConsecutiveSlashesError } from "../errors/consecutive-slashes-error.ts";
+import { InvalidBoundaryError } from "../errors/invalid-boundary-error.ts";
 
 export function validateRoute(route: string): void {
     if (!route) {

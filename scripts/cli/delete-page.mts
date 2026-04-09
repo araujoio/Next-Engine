@@ -2,9 +2,9 @@
 
 import fs from 'fs'
 import path from 'path'
-import { validateRoute } from '../validator/validate-route.mts'
-import { Logger } from '../utils/logger.mts'
-import { deletePage } from '../service/page-service.mts'
+import { validateRoute } from '../validator/validate-route.ts'
+import { Logger } from '../utils/logger.ts'
+import { deletePage } from '../service/page-service.ts'
 
 const log: Logger = new Logger();
 const args: string[] = process.argv.slice(2);

@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-import { Logger } from '../utils/logger.mts';
+import { Logger } from '../utils/logger.ts';
 
 const log = new Logger();
 

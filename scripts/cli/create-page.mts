@@ -2,9 +2,9 @@
 
 import fs from 'fs';
 import path from 'path';
-import { Logger } from '../utils/logger.mts';
-import { validateRoute } from '../validator/validate-route.mts';
-import { createPage, ensureGroupBasics } from '../service/page-service.mts';
+import { Logger } from '../utils/logger.ts';
+import { validateRoute } from '../validator/validate-route.ts';
+import { createPage, ensureGroupBasics } from '../service/page-service.ts';
 import { toPascalCase } from '../utils/normalize.ts';
 
 const log: Logger = new Logger();

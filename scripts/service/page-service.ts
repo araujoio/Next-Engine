@@ -1,5 +1,5 @@
 import fs from 'fs';
-import { pageTemplate, privateLayoutTemplate, publicLayoutTemplate } from '../templates/templates.mts';
+import { pageTemplate, privateLayoutTemplate, publicLayoutTemplate } from '../templates/templates.ts';
 import path from 'path';
 
 /**
