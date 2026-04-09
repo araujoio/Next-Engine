@@ -5,6 +5,7 @@ import path from 'path';
 import { Logger } from '../utils/logger.mts';
 import { validateRoute } from '../validator/validate-route.mts';
 import { createPage, ensureGroupBasics } from '../service/page-service.mts';
+import { toPascalCase } from '../utils/normalize.ts';
 
 const log: Logger = new Logger();
 const args: string[] = process.argv.slice(2);
@@ -23,7 +24,7 @@ try {
     path.join(process.cwd(), 'src', 'app', group, 'layout.tsx'), isPrivate);
 
   if (!fs.existsSync(pagePath)) {
-    createPage(pagePath, pageName);
+    createPage(pagePath, toPascalCase(pageName));
 
     log.info('Successfully created page at:');
     log.success(`/${pagePath}`);
